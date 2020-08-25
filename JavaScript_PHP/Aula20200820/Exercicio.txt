@@ -1,0 +1,9 @@
+Exercício:
+
+1) Alterar as cores de fundo das linhas da 1ª tabela css: nth-child
+
+2) Inclinar a tabela em 20 graus
+transfor: rotate
+
+3) Colocar uma sombra em todos os títulos H1
+text-shadow

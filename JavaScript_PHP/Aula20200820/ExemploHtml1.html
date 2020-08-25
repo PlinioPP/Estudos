@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <title></title>
+  <style type ="text/css">
+  #el1 {color:red;}
+  h2 {background-color: #8899ff} /* (88 Red, 99 Green, ff Blue) */
+  ul li {font-weight: bold; text-decoration: underline;}
+  table, th, td, h3, p {border: 2px solid blue;}
+  table {border-collapse: collapse;}
+  #tab1 {width: 40%; margin-left: 30%;}
+  #tab1 tr:nth-child(even) {background-color: #ffffff; color: green}
+  #tab1 tr:nth-child(odd) {background-color: #000000; color: yellow}
+  #tab1 {transform: rotate(20deg);}
+  h1 {text-shadow: 3px 5px 10px rgba(100,100,255,0.8)}
+  h1 {box-shadow: 3px 5px 10px rgba(100,100,255,0.8)}
+
+  .textolegal {font-size: 30px; font-family: arial; color: green; background-color: yellow}
+  th:hover, td:hover {color: blue; font-size: 1.5em;}
+  </style>
+</head>
+
+<body>
+ <h1 id="el1">Títulos</h1>
+ <h2>Título</h2>
+ <h3>Título</h3>
+ <h4 class="textolegal">Título</h4>
+ <h5>Título</h5>
+ <h6>Título</h6>
+
+ <h2>Título</h2>
+ <ol>
+  <li class="textolegal">João</li>
+  <li>Maria</li>
+  <li>José</li>
+ </ol>
+
+ <ul>
+  <li>VW</li>
+  <li>FIAT</li>
+  <li>GM</li>
+ </ul>
+
+  <table id="tab1">
+   <tr> <th>Código</th> <th>Descrição</th> </tr>
+   <tr> <td>100</td> <td>Logan</td> </tr>
+   <tr> <td>200</td> <td>Logan</td> </tr>
+   <tr> <td>300</td> <td>Celta</td> </tr>
+  </table>
+
+  <table>
+   <tr> <th>Código</th> <th>Descrição</th> </tr>
+   <tr> <td>100</td> <td>Logan</td> </tr>
+   <tr> <td class="textolegal">200</td> <td>Logan</td> </tr>
+   <tr> <td>300</td> <td>Celta</td> </tr>
+  </table>
+
+  <img src="!mmm.jpg">
+
+  <a href="http://www.duckduckgo.com" target="_blank">DuckDuckGo</a>
+
+</body>
+</html>
