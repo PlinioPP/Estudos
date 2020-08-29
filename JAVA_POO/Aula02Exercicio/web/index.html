@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Aula 02 - Servlets
+Vence 30 de agosto de 2020 23:59
+
+Instruções
+Criar um projeto de aplicação web com uma página HTML listando 3 links e um form
+com os parâmetros n1 e n2 apontando para os seguintes servlets:
+1) Um sevrlet cujo nome seja [SeuNome]Servlet e que mostre na página seu nome
+completo;
+2) Um servlet cujo nome seja ServerDateServlet e que mostre a data / hora do
+servidor;
+3) Um servlet cujo nome seja GreetingServlet e que mostre na página a mensagem
+bom dia, boa tarde ou boa noite conforme o horário;
+4) Um servlet cujo nome seja SubtractionServlet e que mostre na página os
+parâmetros n1, n2 bem como o resultado de n1 menos n2.
+
+Você deve hospedar esse projeto num repositório seu do GitHub e compartilhar o
+link na resposta desta tarefa. CERTIFIQUE-SE de que o repositório do GitHub seja
+público para que eu tenha acesso.
+-->
+<html>
+    <head>
+        <title>Exercício - Java Servlets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Java Servlets</h1>
+        <h2>Início</h2>
+        <h3><a href="plinio.html">Mostrar nome completo.</a></h3>
+        <h3><a href="server-date.html">Ver a data e hora do Servidor.</a></h3>
+        <h3><a href="greeting.html">Mensagem de saudação.</a></h3>
+        <form action="subtraction.html">
+            <input type="number" name="n1"/> -
+            <input type="number" name="n2"/>
+            <input type="submit" value="Calcular"/>
+        </form>
+        
+    </body>
+</html>
