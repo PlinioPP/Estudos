@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1598939427 source:c:\temp\github\estudos\estruturadedados\aula01\aula01exercicio02\main.cpp
+	<iostream>
+	<stdlib.h>
+
