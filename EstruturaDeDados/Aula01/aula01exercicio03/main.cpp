@@ -28,19 +28,19 @@ int main()
 
     /* 1º) Verificando se é possível formar um triângulo real a partir dos lados digitados. */
 
-    if (b-c > a | a > b+c | a <= 0)
+    if (b-c > a || a > b+c || a <= 0)
         {
             cout << "Impossivel formar um Triangulo!" << endl;
             return 0;
         }
 
-    else if (a-c > b | b > a+c | b <= 0)
+    else if (a-c > b || b > a+c || b <= 0)
         {
             cout << "Impossivel formar um Triangulo!" << endl;
             return 0;
         }
 
-    else if (a-b > c | c > a+b | c <= 0)
+    else if (a-b > c || c > a+b || c <= 0)
         {
             cout << "Impossivel formar um Triangulo!" << endl;
             return 0;
@@ -48,7 +48,7 @@ int main()
 
     /* 2) Verificando qual o tipo de Triângulo para fazer o cálculo apropriado. */
 
-    if (a == b & a == c)
+    if (a == b && a == c)
         {
             double area;
 
@@ -57,7 +57,7 @@ int main()
             cout << "Area = " << area << endl;
             return 0;
         }
-    else if (a == b | a == c | b == c)
+    else if (a == b || a == c || b == c)
         {
             double area, h;
 

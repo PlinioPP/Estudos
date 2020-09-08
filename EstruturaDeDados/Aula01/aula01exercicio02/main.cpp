@@ -9,6 +9,8 @@ int main()
 {
     double a, b, h;
 
+    system("cls");
+
     cout << "Digite o valor da base do retangulo: " << endl;
     cin >> b;
 
@@ -18,6 +20,12 @@ int main()
     cin >> h;
 
     system("cls");
+
+    if (b == h || b == 0 || h == 0)
+        {
+            cout << "Impossivel formar um retangulo a partir dos valores digitados." << endl;
+            return 0;
+        }
 
     a = b * h;
 

@@ -5,12 +5,12 @@
 using namespace std;
 
 
-/*1) Crie um programa que solicite ao usuario os tres coeficientes de uma equacao
-     do segundo grau e informe os valores de x’ e x’’.*/
+/*1) Crie um programa que solicite ao usuário os três coeficiêntes de uma equação
+     do segundo grau e informe os valores de x’ e x’’. */
 
 int main()
 {
-    int a, b, c, delta, x1, x2;
+    double a, b, c, delta, x1, x2;
 
     cout << "Valor do coeficiente 'a':" << endl;
     cin >> a;
@@ -21,16 +21,26 @@ int main()
 
     system("cls");
 
-    if (a == 0 | b == 0 | c == 0){
+    if (a == 0 || b == 0 || c == 0)
+        {
         cout << "Equacao Incompleta." << endl;
         return 0;
-    }else{
-        delta = (b^2)-((4*a)*c);
-        x1 = (-(b)+(sqrt(delta)))/(2*(a));
-        x2 = (-(b)-(sqrt(delta)))/(2*(a));
+        }
+    else
+        {
+        delta = pow(b,2)-((4*a)*c);
+
+        /* Verificar se o delta é positivo para evitar erro no cálculo da raiz de delta */
+        if (delta < 0)
+            {
+                delta = delta - (delta * 2);
+            }
+
+            x1 = ((-b)+(sqrt(delta)))/(2*a);
+            x2 = ((-b)-(sqrt(delta)))/(2*a);
         }
 
-        cout << "Resultado da equacao " << a << "x^2" << b << "x" << c << "=0" << endl;
+        cout << "Resultado da equacao " << a << "x^2 " << b << "x " << c << " = 0:" << endl;
         cout << "x' = " << x1 << endl;
         cout << "x'' = " << x2 << endl;
 

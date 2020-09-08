@@ -18,7 +18,7 @@ int main()
 
     system("cls");
 
-    if (baseMaior == baseMenor | baseMaior == 0 | baseMenor == 0 | altura == 0)
+    if (baseMaior == baseMenor || baseMaior == 0 || baseMenor == 0 || altura == 0)
         {
             cout << "Os valores digitados nao correspondem para formar um trapezio." << endl;
             return 0;
